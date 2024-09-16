@@ -6,12 +6,8 @@ USER root
 RUN groupadd jovyan \
     && usermod -g jovyan -a -G users jovyan
 
-# install jupyterlab
 ENV CONDA_ENVS_DIRS /work/envs
 ENV SHELL=/bin/bash
-RUN conda install -y jupyterlab && \
-    jupyter labextension disable "@jupyterlab/apputils-extension:announcements" && \
-    ln -s /opt/conda/bin/jupyter-lab /opt/conda/bin/jupyter-notebook
 
 # Copy environment.yml (if found) to a temp location so we update the environment. Also
 # copy "noop.txt" so the COPY instruction does not fail if no environment.yml exists.
