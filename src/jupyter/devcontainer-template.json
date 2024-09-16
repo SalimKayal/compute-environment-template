@@ -1,7 +1,7 @@
 {
-    "id": "datascience",
+    "id": "jupyter",
     "version": "1.0.1",
-    "name": "datascience",
+    "name": "jupyter",
     "description": "A Datascience Template",
     "options": {
       "baseVariant": {
