@@ -8,11 +8,21 @@
         "type": "string",
         "description": "Supported language.",
         "default": "universal",
-        "proposals": [
+        "enum": [
           "python",
           "r",
           "universal"
         ]
+      }
+      "ide": {
+          "type": "string",
+          "enum": [
+              "rstudio-server",
+              "jupyterlab",
+              "code-server"
+          ],
+          "default": "code-server",
+          "description": "Select your favorite IDE"
       }
     },
     "platforms": [
