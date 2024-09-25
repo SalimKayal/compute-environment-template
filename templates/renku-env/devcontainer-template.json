@@ -1,0 +1,22 @@
+{
+    "id": "renku-env",
+    "version": "0.0.1",
+    "name": "renku-env",
+    "description": "A Renku compatible environment template",
+    "options": {
+      "baseLanguage": {
+        "type": "string",
+        "description": "Supported language.",
+        "default": "universal",
+        "proposals": [
+          "python",
+          "r",
+          "universal"
+        ]
+      }
+    },
+    "platforms": [
+      "Python",
+      "R"
+    ]
+}

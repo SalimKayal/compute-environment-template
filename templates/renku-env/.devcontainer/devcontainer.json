@@ -8,12 +8,12 @@
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"installZsh": "true",
-			"username": "jovyan",
+			"username": "user",
 			"userUid": "1000",
 			"userGid": "1000",
 			"upgradePackages": "true"
 		}
 	},
 	// Use base images default CMD.
-	"overrideCommand": false,
+	"overrideCommand": false
 }

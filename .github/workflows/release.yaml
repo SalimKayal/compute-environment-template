@@ -21,11 +21,13 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: "Publish Templates"
+      - name: "Publish Templates and Features"
         uses: devcontainers/action@v1
         with:
           publish-templates: "true"
-          base-path-to-templates: "./src"
+          base-path-to-templates: "./templates"
+          publish-features: "true"
+          base-path-to-features: "./features"
           generate-docs: "true"
 
         env:
