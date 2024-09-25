@@ -13,7 +13,7 @@
           "r",
           "universal"
         ]
-      }
+      },
       "ide": {
           "type": "string",
           "enum": [
